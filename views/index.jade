@@ -1,0 +1,13 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome, please enter your content below
+	div Paste some text to be hashed by word: </br>
+		textarea(id="itemIn" height="40" width="100")
+	div Select your prime factor:  </br>
+		input(type="text" id="primeChoice" width="20")
+	div How much "memory" would you like to allocate: </br>
+		input(type="text" id="tableSize" width="20")
+	div(id="visualize") VISUALIZE!
+	canvas(id="tableCanvas")
