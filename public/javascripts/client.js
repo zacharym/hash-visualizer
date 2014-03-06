@@ -50,9 +50,14 @@ function placeItems(wordArray, index, primeChoice, tableSize, ctx, fillArray){
 	fillArray = placeWord(wordArray[index], primeChoice, tableSize, ctx, fillArray);
 	index++;
 	if(index < wordArray.length){
-		setTimeout(function(){
+		if((index % 100) == 0){
+			setTimeout(function(){
+				placeItems(wordArray, index, primeChoice, tableSize, ctx, fillArray);
+			}, 10);
+		} else {
 			placeItems(wordArray, index, primeChoice, tableSize, ctx, fillArray);
-		}, 1);
+		}
+			
 	}
 }
 
