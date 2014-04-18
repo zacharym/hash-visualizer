@@ -13,7 +13,7 @@ var findBucket = function(item, primeChoice, tableSize){
 function initCanvas(tableSize, numWords){
 	var canvas = document.getElementById('tableCanvas');
 	canvas.width = tableSize;
-	canvas.height = 80;
+	canvas.height = 200;
 	var ctx = canvas.getContext('2d');
 	ctx.fillStyle = "black";
 	return ctx;
@@ -40,7 +40,7 @@ function placeWord(word, primeChoice, tableSize, ctx, fillArray){
 	if(!duplicate){
 		fillArray[bucket][fillArray[bucket].length] = word;
 		var itemOrder = fillArray[bucket].length;
-		var ypos = (80 - (itemOrder*3));
+		var ypos = (200 - (itemOrder*3));
 		ctx.fillRect(bucket, ypos, 1, 3);
 	}
 	return fillArray;
