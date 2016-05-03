@@ -10,8 +10,6 @@ It only hashes each word once so peaks on the histogram actually represent colli
 
 I recommend allocating ~1019 (or some prime around there) spots in your table and using a very long text like this <a href="https://archive.org/stream/firstfortyninest030256mbp/firstfortyninest030256mbp_djvu.txt">Hemingway</a>
 
-Here is a <a href="http://htv.zachmarkin.com">live demo</a>.
-
 Try using both prime and non-prime factors to see how performance varies.
 
 Copyright © 2014
